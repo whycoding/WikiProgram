@@ -1,9 +1,14 @@
 [book]
+title = "Wiki Program"
 authors = ["Haoyuan Wei"]
+src = "src"
 language = "en"
 multilingual = false
-src = "src"
-title = "Wiki Program"
+mathjax-support = false
 
 [build]
 build-dir = "docs"
+
+[output.html.fold]
+enable = true
+level = 0
