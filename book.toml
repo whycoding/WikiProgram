@@ -6,6 +6,9 @@ language = "en"
 multilingual = false
 mathjax-support = false
 
+git-repository-url = "https://github.com/whycoding/WikiProgram"
+site-url = "/WikiProgram/"
+
 [build]
 build-dir = "docs"
 

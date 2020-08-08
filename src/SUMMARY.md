@@ -1,5 +1,7 @@
 # Summary
 
+[Introduction](README.md)
+
 # Writing
 
 * [Markdown](Markdown/Readme.md)
