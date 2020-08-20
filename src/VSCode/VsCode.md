@@ -21,14 +21,13 @@ You can also define all your customized snippets in a global file. In this file,
 
 * Placeholder: `${1:foo}` specifies the default text for the location. 
 
-* Choice: `${1|one,two,three|}` specifies the three choices to use. (Does NOT work as of 20200809.)
+* Choice: `${1|one,two,three|}` specifies the three choices to use. 
 
 * Quotation: use `\` to escape the special symbols like `"`, `{` and `\`. 
 
 * Variables: `$CLIPBOARD` is the contents of the clipboard. 
 
 ```json
-{
 	"cpp block": {
 		"scope": "markdown",
 		"prefix": "cpp",
@@ -37,20 +36,42 @@ You can also define all your customized snippets in a global file. In this file,
 			"$1",
 			"```"
 		]
-    },
-    "why cout": {
+	},
+	"block": {
+		"scope": "markdown",
+		"prefix": "block",
+		"body": [
+			"```${1|python,shell|}",
+			"$2",
+			"```"
+		]
+	},
+	"why cout": {
 		"scope": "cpp",
 		"prefix": "cout",
 		"body": [
 			"std::cout << \"why: ${1:$CLIPBOARD} \\n\" << $1 << std::endl; "
 		]
-    },	
-}
+	},	
+	
+	"why printf": {
+		"scope": "cpp",
+		"prefix": "printf",
+		"body": [
+			"printf(\"why: $1 \\n\"); "
+		]
+	},
 ```
 
 
 Reference: https://code.visualstudio.com/docs/editor/userdefinedsnippets
 
+## Shortcut
+
+| shortcut | explanation |
+| --- | ---|
+| `ctrl` + `[` | decrease indent|
+| `ctrl` + `]` | increase indent|
 
 ## Keybinding
 

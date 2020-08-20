@@ -30,3 +30,9 @@ making a mathematics package that matches Libertine text quite well.
 
 newtxmath can also use the maths italic font provided with the garamondx package, 
 thus offering a garamond-alike text-with-maths combination.
+
+
+## Font Size
+
+* Fontsize: \tiny, \scriptsize, \footnotesize
+* https://www.overleaf.com/learn/latex/Font_sizes,_families,_and_styles

@@ -14,12 +14,15 @@
     * [Figure](Latex/Figure.md)
     * [Table](Latex/Table.md)
     * [Algorithm](Latex/Algorithm.md)
+    * [Beamer](Latex/Beamer.md)
 
 * [Plot](Plot/Readme.md)
     * [Matlab](Plot/Matlab.md)
     * [Python](Plot/Python.md)
     * [GnuPlot](Plot/Gnuplot.md)
     * [Dot](Plot/Dot.md)
+
+* [Excel](Excel/Excel.md)
 
 # Software
 
