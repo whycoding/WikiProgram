@@ -1,34 +1,61 @@
 # File Operation
 
 
-## folder path
+## Files and Folders
 
-* deal with windows path
+* Deal with Windows path
 
-resultFolder = r"C:\Users\h84134957\Documents\experiment\why_tools\PostProcessor-history\test-paras"
+    ```python
+    resultFolder = r"C:\Users\xxx"
+    ```
 
-os.remove
 
-os.rmdir empty dir
+* Obtain the full path of a file
 
-shutil.rmtree dir
+    ```python
+    full_path = os.path.join(dir, filename)
+    ```
 
+* Remove file
+
+    ```python
+    os.remove(...)
+    ```
+
+* Empty directory
+
+    ```python
+    os.rmdir(...)
+    ```
+
+* Remove directory 
+
+    ```python
+    shutil.rmtree(...)
+    ```
+
+## Library
 
 * call a function by its name
 
-            moduleName = "Plot_Functions." + functionName
+    ```python
+    moduleName = "Plot_Functions." + functionName
           
-            if not importlib.util.find_spec(moduleName):
-                continue
-            module = importlib.import_module(moduleName)
-            getattr(module, functionName)(simFiles, paraCFG_names, paraNames, fileDict)
+    if not importlib.util.find_spec(moduleName):
+        continue
+    module = importlib.import_module(moduleName)
+    getattr(module, functionName)(simFiles, paraCFG_names, paraNames, fileDict)
+    ```
+            
+## I/O
 
 
 * string formate
 
-name = "John"
-age = 23
-print("%s is %d years old." % (name, age))
+    ```python
+    print("%s is %d years old." % (name, age))
+    ```
+
 
 
 
